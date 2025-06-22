@@ -1,38 +1,29 @@
-# sv
+## 環境構築
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+このプロジェクトは、公式 devast.io にかかる人数制限を回避するためのものです。  
+クライアントを TypeScript に移植し、非公式に多人数で遊べる環境を整えることを目指しています。
 
-## Creating a project
+### 前提条件
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Volta（Node.js のバージョン管理に使用）
+- pnpm（パッケージマネージャー）
 
-```bash
-# create a new project in the current directory
-npx sv create
+### セットアップ手順
 
-# create a new project in my-app
-npx sv create my-app
-```
+- Volta をインストールする
+- このリポジトリをローカルにクローンする
+- pnpm をインストールして有効化する
+- プロジェクトルートを VS Code で開く
+- 推奨拡張機能をインストールする
+- 依存パッケージをインストールする（pnpm install）
 
-## Developing
+### 開発コマンド
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- pnpm run dev — 開発サーバーの起動
+- pnpm run build — 本番ビルドの作成
+- pnpm run preview — 本番ビルドのローカル確認
 
-```bash
-npm run dev
+---
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+進捗状況は以下のディレクトリで確認できます：  
+https://github.com/super-mari-o/devast-clone/tree/main/src/lib
